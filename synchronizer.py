@@ -30,10 +30,10 @@ def edit_replica(folder_1, folder_2, action):
             if action == 'copy':
                 destination_path = os.path.join(folder_2, element)
                 cmd(path, destination_path)
-                logger.info(f'{element} copied in replica folder')
+                logger.info(f'"{element}" copied in replica folder')
             else:
                 cmd(path)
-                logger.info(f'{element} deleted from replica folder')
+                logger.info(f'"{element}" deleted from replica folder')
 
 
 class Synchronizer:
